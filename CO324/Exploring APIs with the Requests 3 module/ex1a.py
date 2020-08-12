@@ -7,5 +7,6 @@
 
 import requests
 
-
+awd = requests.get("https://api.github.com");
+print(awd)
 
