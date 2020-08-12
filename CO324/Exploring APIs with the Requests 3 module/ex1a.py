@@ -3,3 +3,9 @@
 # Co324
 # Exercise 1
 
+# part a
+
+import requests
+
+
+
