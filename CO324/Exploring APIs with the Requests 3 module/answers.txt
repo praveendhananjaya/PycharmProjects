@@ -1,0 +1,6 @@
+1.The Github v3 REST API.
+
+    a.What do you see in the response when calling the API root endpoint https://api.github.com.
+                json file
+
+
