@@ -1,6 +1,12 @@
 1.The Github v3 REST API.
 
     a.What do you see in the response when calling the API root endpoint https://api.github.com.
-                json file
+                <bound method Response.json of <Response [200]>>
 
+    c.What is the purpose of the various X-Ratelimit- headers that you see in the response?
+        They make request policy to avoid being throttled out and publish current request quota.
+
+    d.To access restricted operations via the API, you need to authenticate yourself first.
+     Explain what effect the following code has at the HTTP protocol level,
+     when a request is made using that session.
 
