@@ -3,9 +3,14 @@
 # Co324
 # Exercise 1
 
-# part b
+# part c
 
-import requests
+import requests ,json
 
-git = requests.get("https://api.github.com/users/praveendhananjaya")
-print( git.text )
+repos_url = "https://api.github.com/users/praveendhananjaya"
+
+git = requests.get( repos_url )
+print( git.headers )
+print( 'max request per hour:-' , git.headers['X-RateLimit-Limit'] )
+print( 'max request per hour:-' , git.headers['X-RateLimit-Remaining'])
+print( 'max request per hour:-' , git.headers['X-RateLimit-Reset'])

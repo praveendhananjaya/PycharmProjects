@@ -8,4 +8,4 @@
 import requests
 
 git = requests.get("https://api.github.com/users/praveendhananjaya")
-print( git.text )
+print( git.headers )

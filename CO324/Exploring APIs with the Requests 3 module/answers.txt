@@ -4,7 +4,7 @@
                 <bound method Response.json of <Response [200]>>
 
     c.What is the purpose of the various X-Ratelimit- headers that you see in the response?
-        They make request policy to avoid being throttled out and publish current request quota.
+        They make request policy to avoid being throttled out and publish current request quota and remaining quota.
 
     d.To access restricted operations via the API, you need to authenticate yourself first.
      Explain what effect the following code has at the HTTP protocol level,

@@ -9,3 +9,6 @@ import requests
 
 git = requests.get("https://api.github.com")
 print( git.json )
+print( git.text )
+
+# api root replys with bound method response
