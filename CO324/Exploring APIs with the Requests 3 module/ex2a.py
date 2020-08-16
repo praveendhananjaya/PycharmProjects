@@ -4,7 +4,7 @@
 # Co324
 # Exercise 1
 
-# part e
+# part 2 a
 
 import requests
 from typing import List , Tuple
