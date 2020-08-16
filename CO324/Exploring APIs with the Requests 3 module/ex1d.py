@@ -10,7 +10,7 @@ import requests
 
 with requests.Session() as session:
     # by using auth token , we can access git . but not yet
-    session.headers['Authorization'] = 'token 8b54f4d3c1fe86be1cb45c38256e19fea10ba11c'
+    session.headers['Authorization'] = 'token 7252c857dc5f5772d063aca0fedd3343e7337dfa'
     # add authorization token to request header
     print( session.headers )
 

@@ -3,16 +3,27 @@
 # Co324
 # Exercise 1
 
-# part d
+# part e
 
 import requests
 
 
 with requests.Session() as session:
-    # by using auth token , we can access git . but not yet
-    session.headers['Authorization'] = 'token 8b54f4d3c1fe86be1cb45c38256e19fea10ba11c'
-    # add authorization token to request header
-    print( session.headers )
+    # by using auth token ,
+    session.headers['Authorization'] = 'token 7252c857dc5f5772d063aca0fedd3343e7337dfa'
 
+    # repo name and description
+    repotitle = { 'name':'test' , 'description':'some test repo' }
 
+    git_test = session.post( 'https://api.github.com/user/repos' , json= repotitle )
+    # post session
 
+    print( "reply status:- " , git_test.status_code )
+
+    print( "Reply massage:- " , git_test.json() )
+
+    repo_list = session.get('https://api.github.com/user/repos')
+
+    for name in repo_list.json():       # repo list
+        print( name['name'] )
+    # list contain 'test' repo ,so it make error 422
