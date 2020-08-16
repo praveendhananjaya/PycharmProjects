@@ -10,7 +10,7 @@ import requests
 
 with requests.Session() as session:
     # by using auth token ,
-    session.headers['Authorization'] = 'token 1f783df7adaa5d4f2e3170ba1e7751044441980a'
+    session.headers['Authorization'] = 'token d5ceb65bbc67f1a4f92709d31d4d5c2171daef9c'
 
     # repo name and description
     repotitle = { 'name':'test' , 'description':'some test repo' }
