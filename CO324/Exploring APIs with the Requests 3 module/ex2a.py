@@ -20,13 +20,14 @@ def github_superstars(orgnanization: str) -> List[Tuple]:   #
     Out = []        #out
     #Sirasa superstar for Computer engineers. :
     with requests.Session() as session:
-        session.headers['Authorization'] = 'token d5ceb65bbc67f1a4f92709d31d4d5c2171daef9c'
+        session.headers['Authorization'] = 'token 0d4275318e150e118cafcd7341291cb9869f31d3'
         # token
         # members list
         git_memebrs = session.get(f'https://api.github.com/orgs/{orgnanization}/members')
 
+
         for name in git_memebrs.json():        # list of members
-            git_memebrs_repo = session.get(f"https://api.github.com/users/{name['login']}/repos")   # member repos
+            git_memebrs_repo = session.get(f"https://api.github.com/users/{name['login']}/repos?-page=l&per_page=68")   # member repos
 
             # read data
             repo_name = ""
@@ -47,6 +48,7 @@ def github_superstars(orgnanization: str) -> List[Tuple]:   #
 
             #print( {repo_star , repo_name} )
             Out.append( (repo_star,repo_name)  )
+            # list append
 
         Out.sort( key= lambda x:x[0] , reverse=True )
 

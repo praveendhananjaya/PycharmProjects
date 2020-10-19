@@ -10,3 +10,24 @@
      Explain what effect the following code has at the HTTP protocol level,
      when a request is made using that session.
 
+
+2.
+   b.Write code to watch the repo that wins github_superstars for
+
+        [(4, 'eng.pdn.ac.lk-unofficial-interim-transcript-template'), (2, 'KURM-CPU'), (1, 'f5n_server'), (0, 'aries_v4-quadruped'), (0, 'github-pages-with-jekyll')]
+
+   c.Github has two versions of its API currently available: v3 and v4.
+        How do you inform the API which version you want to use
+
+        session.headers['Accept'] = 'application/vnd.github.v4'
+        add header ['Accept'] to version .
+
+      d.Explain the difference between the two API versions. Which version is “better”? Why?
+
+                v3 (Rest) design is simple and queries response are large json file.
+                All response process by local process.
+                Then server takes small processing power.
+
+                but v3 (graphq1) is design to work like database system , So response are small and
+                as we need. It reduce data traffic and local processing power.
+                But server takes large processing power.

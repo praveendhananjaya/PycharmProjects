@@ -7,5 +7,5 @@
 
 import requests
 
-git = requests.get("https://api.github.com/users/praveendhananjaya")
+git = requests.get("https://api.github.com/users/praveendhananjaya")    # get user information
 print( git.headers )
