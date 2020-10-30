@@ -1,0 +1,25 @@
+1.a.What does the “with” statement do?
+    'with' statement use for handle exception in python.
+    And it make code more readable and cleaner .
+
+ b.What is the return type of this function?
+    two list
+
+2.c.What does the zip() function return? (hint: try printing combined)
+    it return zip object
+    that zip object contains iterated item list ,
+     {('id1','use1'),('id2','use2'),('id3','use3')...}
+
+   d.it make a new object zip,that object contains revers order  iterated list
+    {('use1','id1'),('use2','id2'),('use3','id3')...}
+
+3.e.How do you look up a user’s login given their id?
+
+    x = users[id]
+
+   f.Suppose you want to do the opposite. That is, look up the id of a user when given their login.
+   How would you modify this function?
+
+    users[login] = id # dic inset
+
+    x = users[login]    # read id by login
