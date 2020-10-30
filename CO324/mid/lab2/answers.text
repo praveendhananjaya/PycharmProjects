@@ -1,0 +1,16 @@
+E/16/081
+praveen dhananjaya
+
+1.a.What is the response code you received?
+    200
+  b.What is the web server and OS used to host this site?
+   Hint: look at the headers stored in response.headers.items().
+
+        server:- Apache/2.4.55
+        OS  :- freeBsd
+
+  c.What is the size of the response body?
+        54501 bytes
+
+        <Response [404]>
+
