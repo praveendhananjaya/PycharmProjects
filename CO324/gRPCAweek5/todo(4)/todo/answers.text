@@ -1,0 +1,40 @@
+E/16/081
+
+Error handling, write conflicts and race conditions
+
+1.State whether each Task API operation is idempotent along with an explanation.
+
+    addTask is not idempotent. if we insert multiple time same item. it return multiple ids.
+
+    delTask is idempotent. Because multiple delete operation on same id, make only one final result list
+
+    editTask is idempotent. If we edit same task multiple time with same new task, it makes same final modification on list
+
+    listTasks is idempotent. Because list is not modified.
+
+3.Why is it necessary to implement the checks stated above?
+
+    Task descriptions must be less than MAXLEN=1024 characters.
+        if someone add large files, it will fill up server memory more fast.
+        So task fill limit control it.
+
+    Task IDs must be valid.
+        unnecessary memory search time reduce, and invalid delete , edit operation can be stop
+
+6.What happens if editTask is called on the same task by two clients simultaneously? Suggest a possible solution.
+
+  *.thread lock on edit task,
+  *.realtime edit function,(google doc, multiple person can edit same document same time.and see all modification real time)
+
+7.There is a subtle error in the provided implementation of addTask called a data race. How can we fix this problem?
+
+    *.thread lock on add task
+
+8.Exam hint) A student writes the following code to prevent the data race in addTask. Explain why this does not ensure mutual exclusion.
+
+    in this case every cycle it make new thread lock.
+
+9.Does code in listTasks need to be in a critical section? Explain why (not?)
+
+    while read a task element, someone edit that element, list task will display daged value.
+    It is extremely rare condition.
