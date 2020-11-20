@@ -3,7 +3,17 @@ syntax = "proto3";
 message Number{
     float value = 1 ;
 }
+
+message Number_couple{
+    float valueA = 1 ;
+    float valueB = 2 ;
+}
 //
 service Calculator{
-    rpc SquareRoot(Number) return (Number){}
+    rpc SquareRoot(Number) returns (Number);
+
+    rpc AddNumber(Number_couple) returns (Number);
+    
+    rpc Substrc(Number_couple) returns (Number);
 }
+
