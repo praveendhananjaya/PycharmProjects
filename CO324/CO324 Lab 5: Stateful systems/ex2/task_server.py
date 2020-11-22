@@ -57,51 +57,94 @@ class TaskapiImpl:
 
         if len(request.value) < 1025:
             with self.lock: # data race lock
-                logging.debug(f"addTask parameters {pformat(request)}")
-                t = task_pb2.Task(id=self.task_id, description=request.value)
+                t = task_pb2.Task(id=self.task_id, description=request.value , state = 0 )
                 self.tasks[self.task_id] = t
+                logging.debug(f"addTask parameters {t.state}")
                 self.task_id += 1
+                context.set_code(grpc.StatusCode.OK)
                 return t
         else:
             logging.debug(f"Max length is 1024")
             context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
             context.set_details('Description is too long!')
-            response = task_pb2.Task(id=None,description= None) 
+            response = task_pb2.Task(id=None,description= None, state = None) 
             return response
 
 
     def delTask(self, request: wrappers_pb2.UInt64Value, context) -> task_pb2.Task:
         if request.value < self.task_id:
             logging.debug(f"delTask parameters {pformat(request)}")
-            return self.tasks.pop(request.value)
+            tem =  self.tasks.pop(request.value)
+            context.set_code(grpc.StatusCode.OK)
+            return tem
         else:
             logging.debug(f"invalid id")
             context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
             context.set_details('invalid Id!')
-            response = task_pb2.Task(id=None,description= None) 
+            response = task_pb2.Task(id=None,description= None,state = None) 
             return response
 
-    def editTask( self, request, context)->task_pb2.Task:   #nondestructive_editTask
-        if request.id < self.task_id:
-            logging.debug("edit parameters ondestructive_editTask")
-            return self.addTask (wrappers_pb2.StringValue(value= request.description ),context=context)
+    def editTask_des( self, request, context)->task_pb2.Task:   
+        if request.id < self.task_id :
+            if len(request.description) < 1025 :
+                logging.debug("edit parameters editTask")
+                t = task_pb2.Task(id=request.id, description=request.description , state = request.state )
+                self.tasks[self.task_id] = t
+                context.set_code(grpc.StatusCode.OK)
+                return t
+            else :
+                logging.debug(f"Max length is 1024")
+                context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
+                context.set_details('Description is too long!')
+                response = task_pb2.Task(id=None,description= None, state = None) 
+                return response
         else:
             logging.debug(f"invalid id")
             context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
             context.set_details('invalid Id!')
-            response = task_pb2.Task(id=None,description= None) 
+            response = task_pb2.Task(id=None,description= None,state= None) 
             return response
 
+    def editTask( self, request, context)->task_pb2.Task:  
+        current_state = self.tasks[request.id]
+        req_state     = request.state ;
+
+        if current_state.state == 0 and ( req_state <= 1 or req_state == 4 ) :
+            return self.editTask_des( request , context= context )
+        elif current_state.state == 1 and req_state == 2 :
+            return self.editTask_des( request , context= context )
+        elif current_state.state == 2 and ( req_state <= 3 or req_state == 4 ) :
+            return self.editTask_des( request , context= context )
+        else:
+            logging.debug(f"incorrect state request {current_state} -> {req_state}")
+            context.set_code(grpc.StatusCode.PERMISSION_DENIED)
+            context.set_details(f"incorrect state request {current_state} -> {req_state}")
+            response = task_pb2.Task(id=None,description= None,state= None) 
+            return response
+
+        
 
 
-    def destructive_editTask( self, request, context)->task_pb2.Task:       # destructive_editTask
-        self.delTask(wrappers_pb2.UInt64Value(value= request.id),context=context)
-        return self.addTask( wrappers_pb2.StringValue(value= request.description ),context=context)
+    def listTasks(self, request , context) -> task_pb2.Tasks:
+        
+        tem = task_pb2.Tasks 
+         
+        
+        if ( max(request.selected) > 5 ) or  ( min(request.selected) < 0 ) :
+            logging.debug(f"out of range {pformat(request)}")
+            context.set_code(grpc.StatusCode.OUT_OF_RANGE)
+            context.set_details(f"out of range {pformat(request)}")
+            return tem
 
+        tem = self.tasks   
 
-    def listTasks(self, request: empty_pb2.Empty, context) -> task_pb2.Tasks:
+        remove = [k for k in self.tasks.keys() if not tem[k].state in request.selected ]
+        for k in remove:  del tem[k]
+        print(tem)
         logging.debug(f"listTasks parameters {pformat(request)}")
-        return task_pb2.Tasks(pending=self.tasks.values())
+        context.set_code(grpc.StatusCode.OK)
+ 
+        return task_pb2.Tasks(pending=tem.values())
 
 TASKFILE = "tasklist.protobuf"
 if __name__ == "__main__":

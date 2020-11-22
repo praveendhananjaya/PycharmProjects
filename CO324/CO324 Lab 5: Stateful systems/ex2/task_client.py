@@ -35,9 +35,13 @@ def test_add(stub, count) -> Mapping[int, str]:
 
 # Test that will be used to grade listTask
 def test_list(stub, tasks: Mapping[int, str]) -> None:
-    tasklist: task_pb2.Tasks = stub.listTasks(empty_pb2.Empty())
+    tem = task_pb2.TaskQuery()
+    tem.selected.append(0)
+
+    tasklist: task_pb2.Tasks = stub.listTasks(tem)
     for t in tasklist.pending:
         logging.debug(f"Task {pformat(t)}")
+        print(t.state)
         # Is the proper task desc is returned for this id?
         #assert t.description == tasks[t.id]
 
