@@ -38,7 +38,7 @@ class TaskapiImpl:
     def __enter__(self):
         """Load tasks from self.taskfile"""
         with open(self.taskfile, mode="rb") as t:
-            tasklist = task_pb2.Tasks()
+            tasklist = task_pb2.Tasks()     # load file
             tasklist.ParseFromString(t.read())
             logging.info(f"Loaded data from {self.taskfile}")
             self.tasks: Mapping[int, task_pb2.Task] = {
@@ -55,7 +55,7 @@ class TaskapiImpl:
 
     def addTask(self, request: wrappers_pb2.StringValue, context) -> task_pb2.Task:
 
-        if len(request.value) < 1025:
+        if len(request.value) < 1025:       # max size set
             with self.lock: # data race lock
                 logging.debug(f"addTask parameters {pformat(request)}")
                 t = task_pb2.Task(id=self.task_id, description=request.value)
@@ -71,9 +71,9 @@ class TaskapiImpl:
 
 
     def delTask(self, request: wrappers_pb2.UInt64Value, context) -> task_pb2.Task:
-        if request.value < self.task_id:
+        if request.value < self.task_id:                            # id valid
             logging.debug(f"delTask parameters {pformat(request)}")
-            return self.tasks.pop(request.value)
+            return self.tasks.pop(request.value)                    # pop out
         else:
             logging.debug(f"invalid id")
             context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
@@ -82,10 +82,10 @@ class TaskapiImpl:
             return response
 
     def editTask( self, request, context)->task_pb2.Task:   #nondestructive_editTask
-        if request.id < self.task_id:
-            logging.debug("edit parameters ondestructive_editTask")
-            return self.addTask (wrappers_pb2.StringValue(value= request.description ),context=context)
-        else:
+        if request.id < self.task_id:                       # id is with in range 
+            logging.debug("edit parameters ondestructive_editTask") 
+            return self.addTask (wrappers_pb2.StringValue(value= request.description ),context=context) # create new 
+        else:                                               # invalid id
             logging.debug(f"invalid id")
             context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
             context.set_details('invalid Id!')
@@ -94,9 +94,9 @@ class TaskapiImpl:
 
 
 
-    def destructive_editTask( self, request, context)->task_pb2.Task:       # destructive_editTask
-        self.delTask(wrappers_pb2.UInt64Value(value= request.id),context=context)
-        return self.addTask( wrappers_pb2.StringValue(value= request.description ),context=context)
+    def destructive_editTask( self, request, context)->task_pb2.Task:       # destructive_editTask , deletes the task and creates a new task with the edits.
+        self.delTask(wrappers_pb2.UInt64Value(value= request.id),context=context) # delet item
+        return self.addTask( wrappers_pb2.StringValue(value= request.description ),context=context) # add new item and return
 
 
     def listTasks(self, request: empty_pb2.Empty, context) -> task_pb2.Tasks:

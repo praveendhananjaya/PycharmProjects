@@ -124,7 +124,7 @@ class TaskapiImpl:
                 elif current_state == 1 and (current_state == 1 or req_state == 2 ):        # may transition to PROGRESSING only.
 
                     return self.editTask_des( request , context= context )
-                elif current_state == 2 and  ( req_state == 2 or  req_state == 3 or req_state == 4 ) :         # may transition to DONE or CANCELLED.
+                elif current_state == 2 and  req_state == 2 and (  req_state <= 3 or req_state == 4 ) :         # may transition to DONE or CANCELLED.
 
                     return self.editTask_des( request , context= context )
                 else:                                                                       # invalid state 
