@@ -23,10 +23,9 @@ client= Mqtt.Client()
 ######Bind function to callback
 client.on_message=on_message
 client.on_connect = on_connect
-client.on_disconnect = on_disconnect
+#client.on_disconnect = on_disconnect
 client.connect("192.168.1.3",1883,60)
-client.publish("Topic","meeeee")
-client.loop_start()
+#client.publish("Topic","meeeee")
+client.loop_forever()
 #####
-while 1 : 
-    sleep(1)
+

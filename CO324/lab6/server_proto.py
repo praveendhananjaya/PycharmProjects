@@ -1,9 +1,11 @@
-"""TODO:
-    * Implement error handling in TaskapiImpl methods
-    * Implement saveTasks, loadTasks
-    * Implement TaskapiImpl.editTask (ignoring write conflicts)
-    * Fix data race in TaskapiImpl.addTask
-"""
+
+import paho.mqtt.client as Mqtt
+import json , dataclasses
+from dataclasses import dataclass ,asdict
+from enum import Enum
+import logging
+import grpc, task_pb2
+
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import logging
@@ -12,6 +14,8 @@ from typing import Mapping, Sequence, Tuple
 import threading
 import grpc
 
+from grpc import server, StatusCode
+import task_pb2, task_pb2_grpc
 
 from google.protobuf import (
     any_pb2,
@@ -25,9 +29,37 @@ from google.protobuf import (
     type_pb2,
     wrappers_pb2,
 )
-from grpc import server, StatusCode
-import task_pb2, task_pb2_grpc
 
+"""
+class EnhancedJSONEncoder(json.JSONEncoder):
+        def default(self, o):
+            if dataclasses.is_dataclass(o):
+                return dataclasses.asdict(o)
+            return super().default(o)
+
+
+broker="mosquitto"
+
+class State(Enum):
+    OPEN = "open"
+    ASSIGNED = "assigned"
+    PROGRESSING = "progressing"
+    CANCELLED = "cancelled"
+
+
+@dataclass
+class data:
+    id : int
+    state : State  
+    description : str
+
+#my = data(id=1,state=State.OPEN.value,description="example task")
+#y =  asdict(my)
+#json_object = json.dumps(y, indent = 4)   
+#print(type(json_object)) 
+#y =  (json.dumps(my,cls=EnhancedJSONEncoder))
+
+"""
 
 class TaskapiImpl:
     def __init__(self, taskfile: str):
@@ -115,7 +147,7 @@ class TaskapiImpl:
         with self.lock: 
             if request.id < self.task_id :      # invalid
                 current_state = self.tasks[request.id].state
-                req_state     = request.state 
+                req_state     = request.state ;
                 #print( 'curr',current_state, 'req' , req_state )
                  # state machine            
                 if (current_state == 0) and ( (req_state <= 1) or (req_state == 4) ) :     # may transition to ASSIGNED or CANCELLED.
@@ -170,6 +202,14 @@ class TaskapiImpl:
         context.set_code(grpc.StatusCode.OK)
  
         return task_pb2.Tasks(pending=tem.values()) 
+
+def on_massge_add(mosq, obj, msg):
+    print("MESSAGES: " + msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
+
+Mqttc = Mqtt.Client()
+
+Mqttc.message_callback_add("broker/addTask",on_massge_add)
+
 
 TASKFILE = "tasklist.protobuf"
 if __name__ == "__main__":
