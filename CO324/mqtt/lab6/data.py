@@ -29,7 +29,7 @@ class State(Enum):
 
 
 @dataclass
-class Task:
+class Task(object):
     id : int
     state : State  
     description : str

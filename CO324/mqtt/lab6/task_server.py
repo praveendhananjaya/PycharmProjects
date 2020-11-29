@@ -25,6 +25,11 @@ client= Mqtt.Client()
 
 
 
+def edit(y):
+    database[y.id] = y
+
+
+
 class TaskapiImpl:
 
     def on_message(client, userdata, message):
@@ -64,7 +69,7 @@ class TaskapiImpl:
             y = database.pop( int(msg.payload))
             my = asdict(y)
             decode = json.dumps(my, indent = 4)
-            client.publish("Task/response/delete",decode)
+            client.publish("Task/respons/edelete/",decode)
 
         else :
             client.publish("Task/response/del","invaild id")
@@ -72,7 +77,11 @@ class TaskapiImpl:
 
     def on_message_list(mosq, obj, msg):
 
-        print("MESSAGES: " + msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
+        print("list: " + msg.topic + " " + str(msg.qos) + " " + str(msg.payload))
+        for i in database.keys():
+            my = asdict(database[i])
+            decode = json.dumps(my ,  indent= 4 , sort_keys=True ) 
+            client.publish("Task/response/listTask",decode)
 
 
     def on_message_edit(mosq, obj, msg):
@@ -84,6 +93,19 @@ class TaskapiImpl:
             req_state = y.state
             current = database[y.id].state
             print(req_state,current)
+
+            if ( current == "open" ) and ( req_state == "open" or req_state == "assigned" or req_state == "cancelled" ):
+                edit(y)
+            elif ( current == "assigned" ) and ( req_state == "assigned" or req_state == "progressing" ):
+                edit(y)
+            elif ( current == "progressing" ) and ( req_state == "progressing" or req_state == "done" or req_state == "cancelled" ):
+                edit(y)
+            elif ( current == "done" ) and ( req_state == "done" ) :
+                edit(y)
+            elif ( current == "cancelled" ) and ( req_state == "cancelled" ):
+                edit(y)
+            else:
+                client.publish("Task/response/edit/error","invaild state change")
 
         else :
             client.publish("Task/response/edit","invaild id")

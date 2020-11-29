@@ -52,11 +52,15 @@ def delTask( client , id ) :
 
 def editTask( client , id , text ):
     topic = "Task/editTask"
-    my = Task( id = id , state=State.OPEN.value , description=text )
+    my = Task( id = id , state=State.ASSIGNED.value , description=text )
     y =  asdict(my)
     json_object = json.dumps(y, indent = 4)  
     payload = json_object
-    client.publish(topic, payload ,qos = 1)
+    client.publish(topic, payload )
+
+def listTask( client ) :
+    topic = "Task/listTask"
+    client.publish(topic)
     
 
 
@@ -81,6 +85,7 @@ if __name__ == "__main__":
     
     addTask(client1, 10)
     delTask(client1,5)
-
     editTask(client1,3,"my")
+    listTask(client1)
+    
     client1.loop_forever()
