@@ -9,8 +9,9 @@ from requests.api import patch
 
 SITE='https://lite.cnn.io/'
 
-def file_open():
-    f = open("document.txt","a")
+def file_open(name , i ):
+    strtem = name + str(i)
+    f = open(f"save/{strtem}.html", "a")
     f.truncate(0)       # erase old data
     return f
 
@@ -20,25 +21,25 @@ def page_download( f, url ):
     site = "https://lite.cnn.io"+url
     #print(site)
     result = requests.get(site)
-    temp = BeautifulSoup( result.text, features="html.parser" )
-
-    f.write('\n')
-    f.write(temp.get_text('\n'))
-    f.write('\n')
+    f.write(result.text)
+    
 
 def get_links(html, keywords):
     #TODO
-    f = file_open()     # open file
+    name = ""
+    for ele in keywords :
+        name += ele
+
     parsed_html = BeautifulSoup(html, features="html.parser")
     print(type(parsed_html))
+    i = 0
     for link in parsed_html.find_all('a'):
         temp = link.string
         for x in keywords :
             if x in temp :
-                #print(link.get('href'), temp )
-                #print(temp)
-                #print(link.get('href'))
+                f = file_open(name,i)     # open file
                 page_download( f = f , url = link.get('href') )
+                i += 1
                 break
 
 if __name__ == "__main__":  
