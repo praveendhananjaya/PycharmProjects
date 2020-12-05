@@ -1,0 +1,9 @@
+eno : E/16/081
+2.
+    b. How would you sort students by the number of courses that they are registered for? (Hint: look at the len function)
+        Out1 = sorted( Out , key= lambda s: len(s.registered_courses) )
+
+
+3.Suppose we want to look up student information by name.
+    b.Can we use a two-element list [surname, given_name] as the key? Explain why.
+        yes can , It reduces the number of overlapping . And makes unique key

@@ -1,0 +1,29 @@
+[
+  {
+    "given_name": "praveen",
+    "surname": "Dhananjaya",
+    "registered_courses": [
+      "Com",
+      "elec",
+      "mech",
+      "math"
+    ]
+  },
+  {
+    "given_name": "koijhu",
+    "surname": "jiu ",
+    "registered_courses": [
+      "course1",
+      "course2",
+      "course3"
+    ]
+  },
+  {
+    "given_name": "dhanna",
+    "surname": "Boss",
+    "registered_courses": [
+      "elec1",
+      "course3"
+    ]
+  }
+]

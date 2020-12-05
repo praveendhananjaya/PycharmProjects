@@ -1,0 +1,50 @@
+﻿E/16/081
+J.M.P.Dhanajaya
+
+
+1.There is no single “server” in a publish-subscribe system to store all tasks. Where are the tasks stored in the system?
+
+
+* Data save subscribe self 
+* Plug a database to mqtt broker , save data on database
+
+
+2.Who should generate task IDs? How should they be generated, avoiding collisions?
+* Publisher generate task ID and attack to addTask packet(single publisher)
+* Publisher generate task ID fuse with publisher unique id  and send(multiple publisher)
+* Database table key
+
+
+3.How can we represent the Task API ADD and DELETE operations in a pub-sub system like MQTT? Under what assumptions is a LIST operation (not) required?
+
+
+        ADD only need description , Delete only need valid id
+        They can be sent using topics.(it is one direction operation in minimum requirement)
+
+
+        But list operation is request response ,  so both parts need to be pub and sub.
+        
+4.When implementing the Task API operations on MQTT, comment on if, and how you would use the following MQTT features.
+        a.Quality of service (0, 1, 2).
+                qof 0 : operation can be lost 
+                qof 1 : duplicates can be appear (ex :- addTask duplicates create multiple entry ) 
+                qof 2 : exactly once 
+                So it is better to have qof 2.
+        b.Clean session flag on topic subscription. 
+                Clean session false , because the broker already has a session available for the client, it uses the existing session and delivers previously queued messages to the client. So Task state will not miss
+        c.Retained flag on message publication
+                In this application state change is FSM , it is useless. Because last state does not mean anything.
+
+
+5.Two students are arguing about how to structure topics
+        b.Student b suggests STATE/ID/OPERATION  
+        a.Student a suggests OPERATION/ID/STATE 
+        
+        Different operations take different parameters. (Add task does not have state, because it always initially in open state )
+        OPERATION and send a data packet ( json or protobuf message ) it contains id , state , ext. 
+
+
+6.Student c suggests including description in the topic as well. Argue for or against this suggestion.
+
+
+        Some descriptions can have ‘/’ , ‘+’ . ‘#’ and it leads to overflowing the maxlength.

@@ -1,0 +1,33 @@
+No:-    E/16/081
+Name:-  J.M.Praveen Dhananjaya
+Lab:-   5 State-full system
+
+1.Write two versions of Taskimpl.editTask that implement the different concurrency semantics discussed in class.
+
+
+    def nondestructive_editTask( self, request, context)->task_pb2.Task:   #nondestructive_editTask
+        if request.id < self.task_id:                       # id is with in range 
+            logging.debug("edit parameters ondestructive_editTask") 
+            return self.addTask (wrappers_pb2.StringValue(value= request.description ),context=context) # create new 
+        else:                                               # invalid id
+            logging.debug(f"invalid id")
+            context.set_code(grpc.StatusCode.INVALID_ARGUMENT)
+            context.set_details('invalid Id!')
+            response = task_pb2.Task(id=None,description= None) 
+            return response
+
+
+
+    def destructive_editTask( self, request, context)->task_pb2.Task:       # destructive_editTask , deletes the task and creates a new task with the edits.
+        self.delTask(wrappers_pb2.UInt64Value(value= request.id),context=context) # delet item
+        return self.addTask( wrappers_pb2.StringValue(value= request.description ),context=context) # add new item and return
+
+2.e.Can a task ever make an illegal transition due to a race condition during update? 
+Explain why (not.)
+
+    If this system has multiple Enumerations and the state machine depends on multiple Enumerations. 
+    During multiple processes update ,  there can be race conditions.And they can lead to illegal 
+    transitions.But in this system there is only one Enumeration and the state machine depends on 
+    one Enumeration . This status is changed in one direction, no backward steps. So it prevents 
+    race conditions.
+
