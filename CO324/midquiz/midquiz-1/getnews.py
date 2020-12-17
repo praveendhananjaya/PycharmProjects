@@ -16,16 +16,14 @@ def file_open(name , i ):
     return f
 
 def page_download( f, url ):
-    #f.write(url)
-    #f.write('\n')
     site = "https://lite.cnn.io"+url
-    #print(site)
     result = requests.get(site)
     f.write(result.text)
     
 
 def get_links(html, keywords):
     #TODO
+    
     name = ""
     for ele in keywords :
         name += ele
@@ -33,10 +31,18 @@ def get_links(html, keywords):
     parsed_html = BeautifulSoup(html, features="html.parser")
     print(type(parsed_html))
     i = 0
-    for link in parsed_html.find_all('a'):
-        temp = link.string
+    x = parsed_html.find('ul')
+    print(type(x))
+    y = BeautifulSoup( str(x) , features="html.parser")
+    for link in y.find_all('a'):  # tag search
+        temp1 = link.string
+        temp = temp1.split(' ')
+        #print(temp)
+        #print(temp1)
         for x in keywords :
             if x in temp :
+                print(temp1)
+                #print(x)
                 f = file_open(name,i)     # open file
                 page_download( f = f , url = link.get('href') )
                 i += 1
