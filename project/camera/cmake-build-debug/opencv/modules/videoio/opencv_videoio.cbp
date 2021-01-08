@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="opencv_videoio"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\opencv\;CMake Files\opencv\cmake\;CMake Files\opencv\cmake\platforms\;CMake Files\opencv\cmake\checks\;CMake Files\opencv\cmake\templates\;CMake Files\opencv\modules\;CMake Files\opencv\modules\core\;CMake Files\opencv\modules\core\include\;CMake Files\opencv\modules\core\include\opencv2\;CMake Files\opencv\modules\core\include\opencv2\core\;CMake Files\opencv\modules\core\misc\;CMake Files\opencv\modules\core\misc\java\;CMake Files\opencv\modules\core\misc\java\src\;CMake Files\opencv\modules\core\misc\java\src\java\;CMake Files\opencv\modules\gapi\;CMake Files\opencv\modules\gapi\cmake\;CMake Files\opencv\modules\videoio\;CMake Files\opencv\modules\videoio\cmake\;CMake Files\opencv\modules\calib3d\;CMake Files\opencv\modules\dnn\;CMake Files\opencv\modules\dnn\cmake\;CMake Files\opencv\modules\dnn\cmake\hooks\;CMake Files\opencv\modules\features2d\;CMake Files\opencv\modules\flann\;CMake Files\opencv\modules\highgui\;CMake Files\opencv\modules\imgcodecs\;CMake Files\opencv\modules\imgproc\;CMake Files\opencv\modules\java\;CMake Files\opencv\modules\java\generator\;CMake Files\opencv\modules\java\generator\android\;CMake Files\opencv\modules\java\generator\android\java\;CMake Files\opencv\modules\java\generator\android\java\org\;CMake Files\opencv\modules\java\generator\android\java\org\opencv\;CMake Files\opencv\modules\java\generator\android\java\org\opencv\android\;CMake Files\opencv\modules\java\generator\src\;CMake Files\opencv\modules\java\generator\src\java\;CMake Files\opencv\modules\java\generator\src\java\org\;CMake Files\opencv\modules\java\generator\src\java\org\opencv\;CMake Files\opencv\modules\java\generator\src\java\org\opencv\osgi\;CMake Files\opencv\modules\js\;CMake Files\opencv\modules\js\generator\;CMake Files\opencv\modules\ml\;CMake Files\opencv\modules\objc\;CMake Files\opencv\modules\objc\generator\;CMake Files\opencv\modules\objdetect\;CMake Files\opencv\modules\photo\;CMake Files\opencv\modules\python\;CMake Files\opencv\modules\python\package\;CMake Files\opencv\modules\python\package\template\;CMake Files\opencv\modules\python\bindings\;CMake Files\opencv\modules\python\test\;CMake Files\opencv\modules\python\python2\;CMake Files\opencv\modules\python\python3\;CMake Files\opencv\modules\stitching\;CMake Files\opencv\modules\ts\;CMake Files\opencv\modules\video\;CMake Files\opencv\modules\world\;CMake Files\opencv\3rdparty\;CMake Files\opencv\3rdparty\ippicv\;CMake Files\opencv\3rdparty\libwebp\;CMake Files\opencv\3rdparty\openjpeg\;CMake Files\opencv\3rdparty\openjpeg\openjp2\;CMake Files\opencv\3rdparty\protobuf\;CMake Files\opencv\3rdparty\quirc\;CMake Files\opencv\3rdparty\ittnotify\;CMake Files\opencv\include\;CMake Files\opencv\doc\;CMake Files\opencv\data\;CMake Files\opencv\apps\;CMake Files\opencv\apps\annotation\;CMake Files\opencv\apps\visualisation\;CMake Files\opencv\apps\interactive-calibration\;CMake Files\opencv\apps\version\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\opencv\;CMake Files\cmake-build-debug\opencv\3rdparty\;CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\;CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\ippicv_lnx\;CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\ippicv_lnx\iw\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_perf_videoio">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_perf_videoio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DHAVE_DC1394_2"/>
+					<Add option="-DHAVE_GSTREAMER"/>
+					<Add option="-DHAVE_CAMV4L2"/>
+					<Add option="-DHAVE_FFMPEG"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/gstreamer-1.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/orc-0.4"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 opencv_perf_videoio"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_perf_videoio/fast">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_perf_videoio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DHAVE_DC1394_2"/>
+					<Add option="-DHAVE_GSTREAMER"/>
+					<Add option="-DHAVE_CAMV4L2"/>
+					<Add option="-DHAVE_FFMPEG"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/gstreamer-1.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/orc-0.4"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 opencv_perf_videoio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_test_videoio">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_test_videoio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_TESTS=1"/>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DHAVE_DC1394_2"/>
+					<Add option="-DHAVE_GSTREAMER"/>
+					<Add option="-DHAVE_CAMV4L2"/>
+					<Add option="-DHAVE_FFMPEG"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/gstreamer-1.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/orc-0.4"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 opencv_test_videoio"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_test_videoio/fast">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_test_videoio" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_TESTS=1"/>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DHAVE_DC1394_2"/>
+					<Add option="-DHAVE_GSTREAMER"/>
+					<Add option="-DHAVE_CAMV4L2"/>
+					<Add option="-DHAVE_FFMPEG"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/gstreamer-1.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/orc-0.4"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 opencv_test_videoio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_videoio">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/lib/libopencv_videoio.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DENABLE_PLUGINS"/>
+					<Add option="-DSTRICT_PLUGIN_CHECK"/>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DHAVE_DC1394_2"/>
+					<Add option="-DHAVE_GSTREAMER"/>
+					<Add option="-DHAVE_CAMV4L2"/>
+					<Add option="-DHAVE_FFMPEG"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/gstreamer-1.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/orc-0.4"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 opencv_videoio"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_videoio/fast">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/lib/libopencv_videoio.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DENABLE_PLUGINS"/>
+					<Add option="-DSTRICT_PLUGIN_CHECK"/>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DHAVE_DC1394_2"/>
+					<Add option="-DHAVE_GSTREAMER"/>
+					<Add option="-DHAVE_CAMV4L2"/>
+					<Add option="-DHAVE_FFMPEG"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/gstreamer-1.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/usr/include/orc-0.4"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 opencv_videoio/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/videoio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/cvconfig.h">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv2/opencv_modules.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio/cap_ios.h">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio/container_avi.private.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio/legacy/constants_c.h">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio/registry.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio/videoio.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include/opencv2/videoio/videoio_c.h">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/perf/perf_camera.impl.hpp">
+			<Option target="opencv_perf_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/perf/perf_input.cpp">
+			<Option target="opencv_perf_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/perf/perf_main.cpp">
+			<Option target="opencv_perf_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/perf/perf_output.cpp">
+			<Option target="opencv_perf_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/perf/perf_precomp.hpp">
+			<Option target="opencv_perf_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/backend_plugin.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/backend_static.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_dc1394_v2.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_ffmpeg.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_ffmpeg_impl.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_gstreamer.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_images.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_mjpeg_decoder.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_mjpeg_encoder.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/cap_v4l.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/container_avi.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/precomp.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/videoio_c.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/videoio_registry.cpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/src/videoio_registry.hpp">
+			<Option target="opencv_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_camera.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_container_avi.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_dynamic.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_ffmpeg.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_gstreamer.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_main.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_mfx.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_precomp.hpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/test/test_video_io.cpp">
+			<Option target="opencv_test_videoio"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVCompilerOptimizations.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVCompilerOptions.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectApacheAnt.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectCXXCompiler.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectOpenCL.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectPython.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectTrace.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectVTK.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDownload.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVExtraTargets.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindAtlas.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindFrameworks.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindIPP.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindIPPIW.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLAPACK.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsGUI.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsGrfmt.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsPerf.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsVideo.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindMKL.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindOpenBLAS.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindOpenEXR.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindProtobuf.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindWebP.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenABI.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenAndroidMK.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenConfig.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenHeaders.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenSetupVars.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVInstallLayout.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVMinDepVersions.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVModule.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVPCHSupport.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVPackaging.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVUtils.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVVersion.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/platforms/OpenCV-Linux.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\platforms\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/checks/ffmpeg_test.cpp">
+			<Option virtualFolder="CMake Files\opencv\cmake\checks\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/checks/opencl.cpp">
+			<Option virtualFolder="CMake Files\opencv\cmake\checks\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/OpenCVConfig-version.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/OpenCVConfig.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/custom_hal.hpp.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/cv_cpu_config.h.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/cvconfig.h.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/opencv_modules.hpp.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/setup_vars_linux.sh.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\core\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include/opencv2/core/version.hpp">
+			<Option virtualFolder="CMake Files\opencv\modules\core\include\opencv2\core\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/misc/java/src/java/core+Core.jcode.in">
+			<Option virtualFolder="CMake Files\opencv\modules\core\misc\java\src\java\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/gapi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\gapi\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/gapi/cmake/DownloadADE.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\gapi\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/gapi/cmake/init.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\gapi\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_dc1394.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_ffmpeg.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_gstreamer.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_v4l.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/init.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/plugin.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/calib3d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\calib3d\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/dnn/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\dnn\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\dnn\cmake\hooks\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/features2d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\features2d\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/flann/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\flann\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\highgui\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\imgcodecs\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\imgproc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\java\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\java\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\java\generator\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/generator/android/java/org/opencv/android/OpenCVLoader.java.in">
+			<Option virtualFolder="CMake Files\opencv\modules\java\generator\android\java\org\opencv\android\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/generator/src/java/org/opencv/osgi/OpenCVNativeLoader.java.in">
+			<Option virtualFolder="CMake Files\opencv\modules\java\generator\src\java\org\opencv\osgi\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/js/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\js\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/js/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\js\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/js/generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\js\generator\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/ml/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\ml\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\objc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objc/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\objc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objc/generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\objc\generator\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objdetect/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\objdetect\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/photo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\photo\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\python\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/python_loader.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\python\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/package/template/config-x.y.py.in">
+			<Option virtualFolder="CMake Files\opencv\modules\python\package\template\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/package/template/config.py.in">
+			<Option virtualFolder="CMake Files\opencv\modules\python\package\template\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/bindings/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\bindings\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\test\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/python2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\python2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/python3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\python3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/stitching/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\stitching\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\ts\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/video/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\video\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/world/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\world\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/ippicv/ippicv.cmake">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\ippicv\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/libwebp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\libwebp\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/openjp2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\openjp2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/openjp2/opj_config.h.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\openjp2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/openjp2/opj_config_private.h.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\openjp2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/protobuf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/quirc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\quirc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/ittnotify/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\ittnotify\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\include\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\doc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/data/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\data\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/annotation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\annotation\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/visualisation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\visualisation\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/interactive-calibration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\interactive-calibration\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/version/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\version\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/../../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/../../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\ippicv_lnx\iw\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

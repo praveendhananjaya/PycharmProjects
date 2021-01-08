@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="opencv_imgproc"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\opencv\;CMake Files\opencv\cmake\;CMake Files\opencv\cmake\platforms\;CMake Files\opencv\cmake\checks\;CMake Files\opencv\cmake\templates\;CMake Files\opencv\modules\;CMake Files\opencv\modules\core\;CMake Files\opencv\modules\core\include\;CMake Files\opencv\modules\core\include\opencv2\;CMake Files\opencv\modules\core\include\opencv2\core\;CMake Files\opencv\modules\core\misc\;CMake Files\opencv\modules\core\misc\java\;CMake Files\opencv\modules\core\misc\java\src\;CMake Files\opencv\modules\core\misc\java\src\java\;CMake Files\opencv\modules\gapi\;CMake Files\opencv\modules\gapi\cmake\;CMake Files\opencv\modules\videoio\;CMake Files\opencv\modules\videoio\cmake\;CMake Files\opencv\modules\calib3d\;CMake Files\opencv\modules\dnn\;CMake Files\opencv\modules\dnn\cmake\;CMake Files\opencv\modules\dnn\cmake\hooks\;CMake Files\opencv\modules\features2d\;CMake Files\opencv\modules\flann\;CMake Files\opencv\modules\highgui\;CMake Files\opencv\modules\imgcodecs\;CMake Files\opencv\modules\imgproc\;CMake Files\opencv\modules\java\;CMake Files\opencv\modules\java\generator\;CMake Files\opencv\modules\java\generator\android\;CMake Files\opencv\modules\java\generator\android\java\;CMake Files\opencv\modules\java\generator\android\java\org\;CMake Files\opencv\modules\java\generator\android\java\org\opencv\;CMake Files\opencv\modules\java\generator\android\java\org\opencv\android\;CMake Files\opencv\modules\java\generator\src\;CMake Files\opencv\modules\java\generator\src\java\;CMake Files\opencv\modules\java\generator\src\java\org\;CMake Files\opencv\modules\java\generator\src\java\org\opencv\;CMake Files\opencv\modules\java\generator\src\java\org\opencv\osgi\;CMake Files\opencv\modules\js\;CMake Files\opencv\modules\js\generator\;CMake Files\opencv\modules\ml\;CMake Files\opencv\modules\objc\;CMake Files\opencv\modules\objc\generator\;CMake Files\opencv\modules\objdetect\;CMake Files\opencv\modules\photo\;CMake Files\opencv\modules\python\;CMake Files\opencv\modules\python\package\;CMake Files\opencv\modules\python\package\template\;CMake Files\opencv\modules\python\bindings\;CMake Files\opencv\modules\python\test\;CMake Files\opencv\modules\python\python2\;CMake Files\opencv\modules\python\python3\;CMake Files\opencv\modules\stitching\;CMake Files\opencv\modules\ts\;CMake Files\opencv\modules\video\;CMake Files\opencv\modules\world\;CMake Files\opencv\3rdparty\;CMake Files\opencv\3rdparty\ippicv\;CMake Files\opencv\3rdparty\libwebp\;CMake Files\opencv\3rdparty\openjpeg\;CMake Files\opencv\3rdparty\openjpeg\openjp2\;CMake Files\opencv\3rdparty\protobuf\;CMake Files\opencv\3rdparty\quirc\;CMake Files\opencv\3rdparty\ittnotify\;CMake Files\opencv\include\;CMake Files\opencv\doc\;CMake Files\opencv\data\;CMake Files\opencv\apps\;CMake Files\opencv\apps\annotation\;CMake Files\opencv\apps\visualisation\;CMake Files\opencv\apps\interactive-calibration\;CMake Files\opencv\apps\version\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\opencv\;CMake Files\cmake-build-debug\opencv\3rdparty\;CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\;CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\ippicv_lnx\;CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\ippicv_lnx\iw\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_imgproc">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/lib/libopencv_imgproc.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 opencv_imgproc"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_imgproc/fast">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/lib/libopencv_imgproc.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 opencv_imgproc/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_perf_imgproc">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_perf_imgproc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 opencv_perf_imgproc"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_perf_imgproc/fast">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_perf_imgproc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 opencv_perf_imgproc/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_test_imgproc">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_test_imgproc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_TESTS=1"/>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 opencv_test_imgproc"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_test_imgproc/fast">
+				<Option output="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin/opencv_test_imgproc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__OPENCV_TESTS=1"/>
+					<Add option="-D__OPENCV_BUILD=1"/>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/icv/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/include"/>
+					<Add directory="/home/praveen/PycharmProjects/project/camera/cmake-build-debug"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/10"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/10"/>
+					<Add directory="/usr/include/c++/10/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 opencv_test_imgproc/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/cvconfig.h">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/accum.avx.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/accum.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/accum.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/bilateral_filter.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/box_filter.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/box_filter.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/color_hsv.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/color_hsv.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/color_rgb.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/color_rgb.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/color_yuv.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/color_yuv.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/filter.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/filter.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/median_blur.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/median_blur.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/morph.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/morph.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/opencl_kernels_imgproc.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/opencl_kernels_imgproc.cpp.rule">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/opencl_kernels_imgproc.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/smooth.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/smooth.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/sumpixels.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/modules/imgproc/sumpixels.avx512_skx.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv2/opencv_modules.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/detail/gcgraph.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/hal/interface.h">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/segmentation.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_3vs4.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_accumulate.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_blend.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_color.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_filters.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_gftt.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_houghlines.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_imgproc.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_imgwarp.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_matchTemplate.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_moments.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/opencl/perf_pyramid.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_accumulate.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_bilateral.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_blur.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_canny.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_contours.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_corners.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_cvt_color.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_distanceTransform.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_filter2d.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_floodfill.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_goodFeaturesToTrack.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_histogram.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_houghcircles.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_houghlines.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_integral.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_main.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_matchTemplate.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_moments.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_morph.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_phasecorr.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_precomp.hpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_pyramids.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_remap.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_resize.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_sepfilters.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_spatialgradient.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_threshold.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/perf/perf_warp.cpp">
+			<Option target="opencv_perf_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/_geom.h">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/accum.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/accum.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/accum.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/approx.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/bilateral_filter.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/bilateral_filter.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/blend.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/box_filter.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/box_filter.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/canny.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/clahe.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color.simd_helpers.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_hsv.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_hsv.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_lab.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_rgb.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_rgb.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_yuv.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/color_yuv.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/colormap.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/connectedcomponents.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/contours.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/convhull.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/corner.avx.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/corner.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/corner.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/cornersubpix.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/demosaicing.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/deriv.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/distransform.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/drawing.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/emd.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/featureselect.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/filter.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/filter.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/filter.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/filterengine.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/fixedpoint.inl.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/floodfill.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/gabor.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/generalized_hough.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/geometry.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/grabcut.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/hal_replacement.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/hershey_fonts.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/histogram.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/hough.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/imgwarp.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/imgwarp.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/imgwarp.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/imgwarp.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/intelligent_scissors.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/intersection.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/linefit.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/lsd.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/main.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/matchcontours.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/median_blur.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/median_blur.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/min_enclosing_triangle.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/moments.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/morph.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/morph.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/accumulate.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/bilateral.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/blend_linear.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/boxFilter.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/boxFilter3x3.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/calc_back_project.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/canny.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/clahe.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/color_hsv.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/color_lab.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/color_rgb.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/color_yuv.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/corner.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/covardata.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/filter2D.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/filter2DSmall.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/filterSepCol.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/filterSepRow.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/filterSmall.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/gaussianBlur3x3.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/gaussianBlur5x5.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/gftt.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/histogram.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/hough_lines.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/integral_sum.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/laplacian3.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/laplacian5.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/linearPolar.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/logPolar.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/match_template.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/medianFilter.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/moments.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/morph.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/morph3x3.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/precornerdetect.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/pyr_down.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/pyr_up.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/pyramid_up.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/remap.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/resize.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/sepFilter3x3.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/threshold.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/warp_affine.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/warp_perspective.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/opencl/warp_transform.cl">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/phasecorr.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/precomp.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/pyramids.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/resize.avx2.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/resize.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/resize.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/resize.sse4_1.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/rotcalipers.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/samplers.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/segmentation.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/shapedescr.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/smooth.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/smooth.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/spatialgradient.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/subdivision2d.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/sumpixels.avx512_skx.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/sumpixels.dispatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/sumpixels.simd.hpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/tables.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/templmatch.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/thresh.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/src/utils.cpp">
+			<Option target="opencv_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_accumulate.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_blend.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_boxfilter.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_canny.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_color.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_filter2d.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_filters.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_gftt.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_histogram.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_houghlines.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_imgproc.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_match_template.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_medianfilter.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_pyramids.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_sepfilter2d.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/ocl/test_warp.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_approxpoly.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_bilateral_filter.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_boundingrect.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_canny.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_color.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_connectedcomponents.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_contours.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_convhull.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_cvtyuv.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_distancetransform.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_drawing.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_emd.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_filter.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_fitellipse.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_fitellipse_ams.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_fitellipse_direct.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_floodfill.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_goodfeaturetotrack.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_grabcut.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_histograms.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_houghcircles.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_houghlines.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_imgproc_umat.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_imgwarp.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_imgwarp_strict.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_intelligent_scissors.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_intersectconvexconvex.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_intersection.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_lsd.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_main.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_moments.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_pc.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_precomp.hpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_resize_bitexact.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_smooth_bitexact.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_subdivision2d.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_templmatch.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_templmatchmask.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_thresh.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/test/test_watershed.cpp">
+			<Option target="opencv_test_imgproc"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVCompilerOptimizations.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVCompilerOptions.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectApacheAnt.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectCXXCompiler.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectOpenCL.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectPython.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectTrace.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDetectVTK.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVDownload.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVExtraTargets.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindAtlas.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindFrameworks.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindIPP.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindIPPIW.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLAPACK.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsGUI.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsGrfmt.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsPerf.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindLibsVideo.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindMKL.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindOpenBLAS.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindOpenEXR.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindProtobuf.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVFindWebP.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenABI.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenAndroidMK.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenConfig.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenHeaders.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVGenSetupVars.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVInstallLayout.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVMinDepVersions.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVModule.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVPCHSupport.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVPackaging.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVUtils.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/OpenCVVersion.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/platforms/OpenCV-Linux.cmake">
+			<Option virtualFolder="CMake Files\opencv\cmake\platforms\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/checks/ffmpeg_test.cpp">
+			<Option virtualFolder="CMake Files\opencv\cmake\checks\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/checks/opencl.cpp">
+			<Option virtualFolder="CMake Files\opencv\cmake\checks\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/OpenCVConfig-version.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/OpenCVConfig.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/custom_hal.hpp.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/cv_cpu_config.h.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/cvconfig.h.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/opencv_modules.hpp.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/cmake/templates/setup_vars_linux.sh.in">
+			<Option virtualFolder="CMake Files\opencv\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\core\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/include/opencv2/core/version.hpp">
+			<Option virtualFolder="CMake Files\opencv\modules\core\include\opencv2\core\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/core/misc/java/src/java/core+Core.jcode.in">
+			<Option virtualFolder="CMake Files\opencv\modules\core\misc\java\src\java\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/gapi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\gapi\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/gapi/cmake/DownloadADE.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\gapi\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/gapi/cmake/init.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\gapi\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_dc1394.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_ffmpeg.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_gstreamer.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/detect_v4l.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/init.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/videoio/cmake/plugin.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\videoio\cmake\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/calib3d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\calib3d\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/dnn/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\dnn\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\dnn\cmake\hooks\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/features2d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\features2d\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/flann/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\flann\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/highgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\highgui\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgcodecs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\imgcodecs\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/imgproc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\imgproc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\java\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\java\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\java\generator\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/generator/android/java/org/opencv/android/OpenCVLoader.java.in">
+			<Option virtualFolder="CMake Files\opencv\modules\java\generator\android\java\org\opencv\android\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/java/generator/src/java/org/opencv/osgi/OpenCVNativeLoader.java.in">
+			<Option virtualFolder="CMake Files\opencv\modules\java\generator\src\java\org\opencv\osgi\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/js/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\js\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/js/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\js\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/js/generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\js\generator\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/ml/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\ml\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\objc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objc/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\objc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objc/generator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\objc\generator\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/objdetect/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\objdetect\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/photo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\photo\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/common.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\python\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/python_loader.cmake">
+			<Option virtualFolder="CMake Files\opencv\modules\python\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/package/template/config-x.y.py.in">
+			<Option virtualFolder="CMake Files\opencv\modules\python\package\template\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/package/template/config.py.in">
+			<Option virtualFolder="CMake Files\opencv\modules\python\package\template\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/bindings/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\bindings\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\test\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/python2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\python2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/python/python3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\python\python3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/stitching/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\stitching\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/ts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\ts\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/video/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\video\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/modules/world/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\modules\world\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/ippicv/ippicv.cmake">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\ippicv\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/libwebp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\libwebp\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/openjp2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\openjp2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/openjp2/opj_config.h.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\openjp2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/openjpeg/openjp2/opj_config_private.h.cmake.in">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\openjpeg\openjp2\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/protobuf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/quirc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\quirc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/3rdparty/ittnotify/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\3rdparty\ittnotify\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\include\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\doc\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/data/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\data\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/annotation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\annotation\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/visualisation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\visualisation\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/interactive-calibration/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\interactive-calibration\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/opencv/apps/version/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\opencv\apps\version\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/../../../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/../../../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/praveen/PycharmProjects/project/camera/cmake-build-debug/opencv/3rdparty/ippicv/ippicv_lnx/iw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\opencv\3rdparty\ippicv\ippicv_lnx\iw\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
