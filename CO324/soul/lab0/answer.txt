@@ -1,0 +1,5 @@
+1.  a. in python exception handle by with.
+    b. two list
+
+2.  c. zip object
+    b.

@@ -1,0 +1,128 @@
+﻿Part (A)
+
+
+1.Explain what is meant by a docker image and container.
+        Image: Image is a template. And it is a read-only file. It can make an instance of the container.
+        Container: Docker container is a running instance of a Docker image. It holds the entire package needed to run the application.
+
+
+3.What is the purpose of the ‘TAG’ column?
+        
+        Tag convey useful information about a specific image version.
+
+
+4.Where is the docker image downloaded from when you execute the command above?
+
+
+        Docker hub
+
+
+6.What do you observe in the docker console?
+
+
+        CONTAINER ID
+
+
+7.Explain what the -p option in the docker run command in (5) does.
+
+
+        Publish port,
+To make a port available to services outside of docker,
+
+
+10.Verify the container is stopped by looking at the “status” column of the following command. What is the effect of the -a switch to the docker ps command?
+
+
+Show all the containers.
+
+
+11.How do you list the logs of a stopped container?
+
+
+        docker logs <containerName>
+
+
+12.How do you restart the nginx container that was stopped in (9)?
+
+
+         docker restart <containerName>
+
+
+13.How do you delete the nginx docker image?
+
+
+         docker image rm -f  nginx
+
+
+
+
+14.What happens if you try to delete the image of a running container?
+
+
+        Image deletes, but container run along without issue
+
+
+
+
+
+
+
+
+
+
+
+
+Part (B)
+
+
+1.Use the ‘docker build’ command to build an image and run ‘app1.js’. Ensure it is built successfully by doing ‘docker image ls’. Now run it and ensure it works by accessing http://localhost:3000.
+
+
+         docker run -p 3000:3000  dfdc9b90ff69
+
+
+2.Now write a Dockerfile for ‘app2.js’ using the Dockerfile for ‘app1.js’ as a starting point. The provided Dockerfile copies files to the root directory of the image. Modify it to copy application files to the ‘/app’ directory within the image
+
+
+
+
+
+
+WORKDIR /app
+
+
+COPY . /app
+
+
+
+
+3.‘app2.js’ can be passed two arguments, ‘message’ and ‘colour’ as environment variables. Show how you can set the message and colour variables when running this docker image (without changing the code given.)
+
+
+docker run  -d  -p 3000:3000 -e colour=55 -e message=praveen  9f2eb97ad41f 
+
+
+4.‘app3.js’ requires the modules in package.json to be installed. Use the ‘npm’ command to install the necessary modules when building the image. You can set the same environment variables as app2.js to change the message and background colour at run time like ‘app2.js’.
+RUN npm install
+
+
+5.Write a Dockerfile for ‘app4.js’ installing the required modules. Run the image and upload a file. Verify that the file was uploaded by visiting http://localhost:3000/upload/filename (e.g. http://localhost:3000/upload/photo.jpg.)
+6.Stop the container you ran in (5) and remove the stopped container using the ‘docker container rm’ command. Now start a new container of the ‘app4.js’ image. Try to access the file you uploaded in (5.) Explain the reason why the file is not accessible.
+
+
+        
+         Docker container is a running instance of a Docker image. If we delete the instance we lost all the variable (ex. photo.jpg). 
+
+
+7.Create a volume to hold uploads using ‘docker volume create’. Now show how ‘app4.js’ can be run with the volume mounted. Verify that the uploaded files are available after the container is removed and a new one is started (with the volume mounted.)
+
+
+
+
+docker run  --mount source=myvolume,destination=/app/upload  -d -p 3000:3000 f67a0b8097a6
+
+
+8.Create an account on Docker Hub. Upload the image you created for ‘app4.js’ to Docker Hub and provide a URL to your image.
+
+
+https://hub.docker.com/layers/130603902/praveen350/project/latest/images/sha256-78e25adaeaad36b70c6dc0e3ce85445f8b5db94328d546f20980e3da829a842a?context=explore&tab=layers
