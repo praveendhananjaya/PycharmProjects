@@ -17,7 +17,7 @@ int main()
     int k = waitKey(0); // Wait for a keystroke in the window
     if(k == 's')
     {
-        imwrite("starry_night.png", img);
+        imwrite("starry_night.png", img)
     }
     return 0;
 }
