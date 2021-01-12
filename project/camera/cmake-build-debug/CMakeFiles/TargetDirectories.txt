@@ -1,5 +1,0 @@
-/home/praveen/PycharmProjects/project/camera/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/praveen/PycharmProjects/project/camera/cmake-build-debug/CMakeFiles/camera.dir
-/home/praveen/PycharmProjects/project/camera/cmake-build-debug/CMakeFiles/package.dir
-/home/praveen/PycharmProjects/project/camera/cmake-build-debug/CMakeFiles/package_source.dir
-/home/praveen/PycharmProjects/project/camera/cmake-build-debug/CMakeFiles/edit_cache.dir
