@@ -27,7 +27,7 @@ DEBUG = True
 # DEBUG can be True/False or 1/0
 #DEBUG = int(os.environ.get('DEBUG', default=1))
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -124,9 +124,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIR = [os.path.join(BASE_DIR,'static'),]
+STATICFILES_DIRS = [
+    BASE_DIR , "static"
+]
 
-
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
 
 MEDIA_URL = '/media/'
 
