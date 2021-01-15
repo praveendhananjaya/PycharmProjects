@@ -21,17 +21,16 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from pages.views import homepage_view 
-from products import product_detail_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage_view ),
-    path('home/', product_detail_view)
+    #path('home/', product_detail_view)
 
 ]
 
 urlpatterns +=  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-urlpatterns += static(settings.STATIC_URL,document_root=settings.STATICFILES_DIR)
 

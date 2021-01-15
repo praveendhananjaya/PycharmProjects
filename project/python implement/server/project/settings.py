@@ -27,7 +27,7 @@ DEBUG = True
 # DEBUG can be True/False or 1/0
 #DEBUG = int(os.environ.get('DEBUG', default=1))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
