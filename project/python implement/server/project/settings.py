@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(r26$vr#+t=h-b9c6+9a_1eoau8_nx8jbk$m)_+@hp3y)req-k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # DEBUG can be True/False or 1/0
 #DEBUG = int(os.environ.get('DEBUG', default=1))
 
@@ -35,10 +35,12 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 
     'products',
     'pages'
@@ -124,12 +126,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 STATICFILES_DIRS = [
-    BASE_DIR , "static"
+    os.path.join(PROJECT_ROOT, 'static'),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
+
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
