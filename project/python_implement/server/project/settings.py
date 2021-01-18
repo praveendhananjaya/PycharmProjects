@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framwork' ,
 
     'products',
     'pages'
@@ -138,7 +139,5 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-ADMIN_URL = '/admin/'
 
-ADMIN_ROOT = os.path.join(BASE_DIR,'admin')
 
