@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.2.4"
-gunicorn = "*"
+django = "==2.1.1"
+pytz = "==2020.5"
 
 [dev-packages]
 
