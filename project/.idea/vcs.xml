@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_implement/Django-Ecommerce" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_implement/django-ecommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_implement/my" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_implement/test (copy)/Django-Ecommerce" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_implement/test (copy)/Django-Ecommerce (copy)" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_implement/test/Django-Ecommerce" vcs="Git" />
