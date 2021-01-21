@@ -382,3 +382,9 @@ class RequestRefundView(View):
             except ObjectDoesNotExist:
                 messages.info(self.request, "This order does not exist")
                 return redirect("core:request-refund")
+
+
+class CartView(ListView):
+    template_name = "5.html"
+    queryset = Item.objects.filter(is_active=True)
+    context_object_name = 'items'
