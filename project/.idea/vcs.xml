@@ -11,5 +11,7 @@
     <mapping directory="$PROJECT_DIR$/python_implement/test/Django-Ecommerce (copy)" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_implement/test2 (copy)/django-ecommerce" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/python_implement/test2/django-ecommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_implement/test3/Django-ecommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_implement/test4/gorgeous-online-shop" vcs="Git" />
   </component>
 </project>
