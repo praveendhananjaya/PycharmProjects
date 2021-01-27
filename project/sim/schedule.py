@@ -14,8 +14,11 @@ class shedule:
         self.pipeline = pipeline
 
 
-        for x in range(number_of_rack):
-            self.rack_iteam.append([])
+        for y in range(number_of_rack):
+            t = []
+            for x in range(number_of_rack):
+                t.append([])
+            self.rack_iteam.append(t)
 
             
         #print(self.rack_iteam)
@@ -46,8 +49,9 @@ class shedule:
 
         return agv_list
 
-    def rack__init__(self,rack_id,iteam_list):
-        self.rack_iteam[rack_id] = iteam_list
+    def rack__init__(self,X,Y,iteam_list):
+        #print(X,Y,iteam_list)
+        self.rack_iteam[Y][X] =   iteam_list
         #print(self.rack_iteam)
         #pass
 
