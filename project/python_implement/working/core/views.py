@@ -20,7 +20,7 @@ from .forms import CheckoutForm, CouponForm, RefundForm, PaymentForm
 from .models import Item, OrderItem, Order, Address, Payment, Coupon, Refund, UserProfile
 
 import threading
-from .mqtt import *
+from pahomqtt import *
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
