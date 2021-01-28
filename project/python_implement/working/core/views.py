@@ -1,3 +1,5 @@
+import paho.mqtt.client as mqtt
+import sys
 import random
 import string
 
@@ -17,8 +19,23 @@ from django.views.generic import ListView, DetailView, View
 from .forms import CheckoutForm, CouponForm, RefundForm, PaymentForm
 from .models import Item, OrderItem, Order, Address, Payment, Coupon, Refund, UserProfile
 
+import threading
+from .mqtt import *
+
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
+
+
+
+
+
+"""
+def mqtt(X):
+
+    infot = client.publish("AGV", X, qos=2)
+    infot.wait_for_publish()
+
+    """
 
 def create_ref_code():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=20))
@@ -211,6 +228,9 @@ class CheckoutView(View):
 
 class PaymentView(View):
     
+
+
+
     def get(self, *args, **kwargs):
         order = Order.objects.get(user=self.request.user, ordered=False)
         
@@ -243,12 +263,23 @@ class PaymentView(View):
     def post(self, *args, **kwargs):
         order = Order.objects.get(user=self.request.user, ordered=False)
         my_list = order.get_list()
+        mymqtt = MYMQTT()
+        """
         for x in my_list:
             messages.warning(self.request, { x } )
-        
-        my_add = order.get_address()
-        for x in my_add:
+            t1 = threading.Thread(target=mqtt , args= x)
+            t1.start()
+            for x in my_add:
             messages.warning(self.request, { x } )
+        """
+        my_add = order.get_address()
+
+
+        y = [my_add,my_list]
+        
+        mymqtt.set(X=  str(y) )
+        t2 = threading.Thread(target=mymqtt.mqtt(), args={})
+        t2.start()
 
         order.ordered = True
         order.save()
