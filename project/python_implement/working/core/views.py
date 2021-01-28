@@ -283,7 +283,7 @@ class PaymentView(View):
 
         order.ordered = True
         order.save()
-        messages.info(self.request, "You do not have an active order")
+        messages.info(self.request, "Your order was successful!")
         return redirect("/")
         """
         form = PaymentForm(self.request.POST)
