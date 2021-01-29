@@ -127,17 +127,21 @@ class MAP:
                 self.Cell[half][len(self.Cell[0])-x-4] = ' '
                 self.Cell[half+1][len(self.Cell[0])-x-4] = ' '
 
-    def map_print(self,array):
+    def map_print(self):
 
-        for y in array:
+        for y in self.Cell:
             for x in y:
                 print(f"{x}", end=' ')
             print()
 
     def cell_map():
         pass
+
+    def cls(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+        
         
 
-my_map = MAP(3,3)
-tem = my_map.cell_render([[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
-my_map.map_print(array=tem)
+#my_map = MAP(3,3)
+#tem = my_map.cell_render([[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
+#my_map.map_print(array=tem)
