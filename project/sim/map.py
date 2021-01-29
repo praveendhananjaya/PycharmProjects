@@ -41,6 +41,7 @@ def test():
         sleep(1)
 
 
+
 k = f"{bcolors.WARNING}.{bcolors.OKGREEN}"
 
 class MAP:
@@ -61,6 +62,7 @@ class MAP:
         
 
     def print(self):
+        cls()
         for y in range(self.NUMBER_OF_CELL*self.CELL_SIZE):
             for x in range( len(self.map[y]) ):
                 print(f"{self.map[y][x]}" , end=' ')
@@ -102,6 +104,7 @@ class MAP:
         
         
     def cell_table(self , X , Y , array ):
+        
         print(X,Y,array)
         t = Texttable()
         for w in range(len(array)):
