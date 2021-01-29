@@ -9,15 +9,9 @@ JUN         = 'J'
 STREET      = 'S'
 
 
-class MAP:
-    def __init__(self , Cell_X , Cell_Y ) -> None:
-        self.Cell_X = Cell_X
-        self.Cell_Y = Cell_Y
+class CELL:
+    def __init__(self) -> None:
         self.cell()
-
-    def lineMap(self) -> None:
-        self.linemap = []
-        pass
 
     def cell(self) :        
         # j   0   j         E - entrance    
@@ -95,40 +89,48 @@ class MAP:
             self.Cell[y][len(self.Cell[0])-2] = ' '
             self.Cell[y][len(self.Cell[0])-3] = ' '
 
-        self.entrance()
 
-        def corner():
-            pass
+        self.jun()
+        self.entrance()
 
         return self.Cell 
 
     def entrance(self):
         if self.abstract_cell[0][1] == ENTRANCE :
             half = int(len(self.Cell[0])/2)
+            self.en_y = 6
+            self.en_x = half
             for y in range(1,4):
+                 
                 self.Cell[y+4][half] = ' '
                 self.Cell[y+4][half+1] = ' '
 
         if self.abstract_cell[2][1] == ENTRANCE:
             half = int(len(self.Cell[0])/2)
+            self.en_y = len(self.Cell)-4
+            self.en_x = half
             for y in range(len(self.Cell) , len(self.Cell)- 4):
                 self.Cell[y-4][half] = ' '
                 self.Cell[y-4][half+1] = ' '
 
         if self.abstract_cell[1][0] == ENTRANCE:
             half = int(len(self.Cell)/2)
+            self.en_y = half
+            self.en_x = 6
             for x in range(0, 4):
                 self.Cell[half][x+4] = ' '
                 self.Cell[half+1][x+4] = ' '
 
         if self.abstract_cell[1][2] == ENTRANCE:
             half = int(len(self.Cell)/2)
+            self.en_y = half
+            self.en_x = len(self.Cell[0])-7
             for x in range(0, 4):
                 self.Cell[half][len(self.Cell[0])-x-4] = ' '
                 self.Cell[half+1][len(self.Cell[0])-x-4] = ' '
 
-    def map_print(self):
-
+    def cell_print(self):
+        
         for y in self.Cell:
             for x in y:
                 print(f"{x}", end=' ')
@@ -140,8 +142,22 @@ class MAP:
     def cls(self):
         os.system('cls' if os.name == 'nt' else 'clear')
         
-        
+    def jun(self):
+        for x in range(0,3):
+            self.Cell[3][x] = ','
+            self.Cell[len(self.Cell)-4][x] = ','
+    
+        for x in range(len(self.Cell[0])-3, len(self.Cell[0])):
+            self.Cell[3][x] = ','
+            self.Cell[len(self.Cell)-4][x] = ','
 
+        for y in range(0,3):
+            self.Cell[y][3] = ','
+            self.Cell[y][len(self.Cell[0])-4] = ','
+
+        for y in range(len(self.Cell)-3,len(self.Cell)):
+            self.Cell[y][3] = ','
+            self.Cell[y][len(self.Cell[0])-4] = ','
 #my_map = MAP(3,3)
 #tem = my_map.cell_render([[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
 #my_map.map_print(array=tem)
