@@ -67,7 +67,7 @@ class MAP:
             if y == ENTRANCE:
                 cell_y_size += 2*self.PATH_SIZE
 
-        if self.abstract_cell[0][1] == ENTRANCE : 
+        
 
         p1 = range(cell_x_size)
         p2 = range(cell_y_size)
@@ -95,12 +95,37 @@ class MAP:
             self.Cell[y][len(self.Cell[0])-2] = ' '
             self.Cell[y][len(self.Cell[0])-3] = ' '
 
-
+        self.entrance()
 
         def corner():
             pass
 
         return self.Cell 
+
+    def entrance(self):
+        if self.abstract_cell[0][1] == ENTRANCE :
+            half = int(len(self.Cell[0])/2)
+            for y in range(1,4):
+                self.Cell[y+4][half] = ' '
+                self.Cell[y+4][half+1] = ' '
+
+        if self.abstract_cell[2][1] == ENTRANCE:
+            half = int(len(self.Cell[0])/2)
+            for y in range(len(self.Cell) , len(self.Cell)- 4):
+                self.Cell[y-4][half] = ' '
+                self.Cell[y-4][half+1] = ' '
+
+        if self.abstract_cell[1][0] == ENTRANCE:
+            half = int(len(self.Cell)/2)
+            for x in range(0, 4):
+                self.Cell[half][x+4] = ' '
+                self.Cell[half+1][x+4] = ' '
+
+        if self.abstract_cell[1][2] == ENTRANCE:
+            half = int(len(self.Cell)/2)
+            for x in range(0, 4):
+                self.Cell[half][len(self.Cell[0])-x-4] = ' '
+                self.Cell[half+1][len(self.Cell[0])-x-4] = ' '
 
     def map_print(self,array):
 
