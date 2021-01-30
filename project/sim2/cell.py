@@ -10,9 +10,15 @@ STREET      = 'S'
 
 
 class CELL:
+
+    def table(self,array):
+        self.array = array
+        self.cell_render()
+
     def __init__(self) -> None:
         self.cell()
-
+    
+        
     def cell(self) :        
         # j   0   j         E - entrance    
         # 0   r   0         R - rack        
@@ -24,10 +30,12 @@ class CELL:
         
         return self.abstract_cell
 
-    def cell_render(self,array):
+    def cell_render(self):
+
         self.PATH_SIZE = 4
         self.Cell = []
 
+        array = self.array
 
         my_table = Texttable()
         if len(array) > 5:

@@ -1,4 +1,4 @@
-import paho.mqtt.client as mqtt
+#import paho.mqtt.client as mqtt
 import sys
 import random
 import string
@@ -263,7 +263,7 @@ class PaymentView(View):
     def post(self, *args, **kwargs):
         order = Order.objects.get(user=self.request.user, ordered=False)
         my_list = order.get_list()
-        mymqtt = MYMQTT()
+        mymqtt = MQTT()
         """
         for x in my_list:
             messages.warning(self.request, { x } )

@@ -12,20 +12,21 @@ LEFT = 3
 colour = bcolors()
 
 class AGV:
-    def __init__(self,MAP,LINE_MAP) -> None:
+    def __init__(self, MAP, full_map) -> None:
         self.ANGLE = DOWN
         k = u'\u2588'
         N = f"{bcolors.WARNING}{k}{bcolors.OKGREEN}"
         self.N =N
         self.AGV = [[N, N], [N, N]]
         self.MAP = MAP
-        self.line_map = LINE_MAP
+        #self.line_map = LINE_MAP
         self.X = 5 
         self.Y = 18
 
         self.line_x = 0
         self.line_y = 0
 
+        self.full_map = full_map
 
         self.food_print()
 
@@ -52,7 +53,7 @@ class AGV:
 
     def street(self):
         status = 0
-        self.MAP.cls()
+        
         if (self.Y>0) and (self.ANGLE == UP) and (self.MAP.Cell[self.Y-1][self.X] != '.')  :    # UP
             self.Y -= 1
             status = 1
@@ -67,9 +68,7 @@ class AGV:
             status = 1
             
         ## map fresh
-        self.MAP.cell_render([[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
-        self.agv_print()
-        self.MAP.cell_print()
+        
         
         return status
 
@@ -123,7 +122,7 @@ class AGV:
         return self.check(ANGLE)
 
     def check(self,ANGLE):
-        print(ANGLE)
+        
         if ANGLE == UP :
             if (self.MAP.Cell[self.Y-1][self.X] != '.') and (self.MAP.Cell[self.Y-1][self.X+1] != '.'):
                 return 1
@@ -150,10 +149,10 @@ class AGV:
     def cpu(self):
 
         while(1):
+            self.full_map.cls()
             sleep(1)
             
             if ( self.right_chech() == 1):
-                print('check')
                 self.turnright()
                 self.street()
                 
@@ -161,6 +160,11 @@ class AGV:
                 end =self.street()
                 if end == 0:
                     self.turnright()
+            
+            self.MAP.cell_render()
+            self.agv_print()
+            
+            #self.full_map.map_print()
             
 
             if (self.X == self.MAP.en_x) and (self.Y == self.MAP.en_y):
