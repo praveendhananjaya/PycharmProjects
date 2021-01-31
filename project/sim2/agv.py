@@ -164,7 +164,7 @@ class AGV:
             self.MAP.cell_render()
             self.agv_print()
             
-            #self.full_map.map_print()
+            self.full_map.map_print()
             
 
             if (self.X == self.MAP.en_x) and (self.Y == self.MAP.en_y):

@@ -4,6 +4,10 @@
 
 This is a e-commerce website built with Django.
 
+### web site
+
+[www.medishop.com](http://ec2-34-228-244-128.compute-1.amazonaws.com:8000/)
+
 ## Quick demo
 
 [![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/demo.gif "Logo")]
@@ -41,7 +45,7 @@ gunicorn djecommerce.wsgi:application --bind 0.0.0.0:8000
 ```
 login
 ```
-![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/login.png )
+![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/login.gif )
 
 ```
 sign up
@@ -49,7 +53,16 @@ sign up
 
 ![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/signup.png )
 
-### Accountability
+### checkout
 
 
+![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/checkout.png )
 
+
+### mqtt message (order)
+
+![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/mqtt.png )
+
+### change item details
+
+![alt text]( https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing/blob/main/Web%20application/aws/doc/change.gif)
