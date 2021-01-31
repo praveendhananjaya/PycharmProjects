@@ -4,11 +4,11 @@ from map import *
 
 
 
-my_map = MAP(Y=1,X=2)
+my_map = MAP(Y=2,X=2)
 my_map.cell_table( X= 0 , Y = 0 , array= [[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
 my_map.cell_table(X=1, Y=0, array=[[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
-#my_map.cell_table(X=0, Y=1, array=[[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
-#my_map.cell_table(X=1, Y=1, array=[[2, 3], [3, 5], [2, 3], [2, 3], [2, 3]])
+my_map.cell_table(X=0, Y=1, array=[[1, 3], [3, 5], [6, 3], [2, 3], [2, 3]])
+my_map.cell_table(X=1, Y=1, array=[[2, 3], [4, 5], [2, 3], [8, 3], [9, 3]])
 
 
 
